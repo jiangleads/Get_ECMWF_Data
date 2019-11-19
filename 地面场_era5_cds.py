@@ -73,6 +73,7 @@ def main():
    #创建一个主进程与工作进程通信
    queue = Queue()
 
+   # 20191119更新# 新的请求规则 https://cds.climate.copernicus.eu/live/limits
    # 注意，每个用户同时最多接受4个request https://cds.climate.copernicus.eu/vision
    #创建四个工作线程
    for x in range(4):
